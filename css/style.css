@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@100;400&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(46, 42, 64);
+}
+/* 
+font-family: 'Comfortaa', cursive; */
+
+.wrapper {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* header=============== */
+.header {
+    padding: 30px 0;
+    max-width: 100%;
+    min-height: auto;
+    background: #4a486d url('../img/header/header-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+.logo {
+    font-family: 'Comfortaa', cursive; 
+    font-weight: 600;
+    font-size: 35px;
+    color: #ffdfb8;
+}
+.header__data {
+    max-width: 400px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    color: #ffdfb8;
+    margin-bottom: 100px;
+}
+.header__title {
+    font-family: 'Comfortaa', cursive; 
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.header__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+}
+/* /header=============== */
+
+/* works================= */
+.works {
+    padding: 90px 0;
+    background: #ffdfb8 url('../img/templates/works-bg.jpg') repeat;
+    background-size: auto;
+}
+.works__content {
+    margin-bottom: 70px;
+    text-align: center;
+}
+.works__heading {
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-family: 'Comfortaa', cursive;
+}
+.works__item {
+    text-align: center;
+}
+.works__item + .works__item {
+    margin-top: 40px;
+}
+.works__image {
+    margin-bottom: 20px;
+}
+.works__title {
+    font-size: 24px;
+    font-weight: 400;
+}
+a.works__link {
+    color: #000;
+    /* text-decoration: underline; */
+}
+/* /works================ */
+
+/* footer================ */
+.footer {
+    padding: 60px;
+    background: #eee;
+}
+.footer__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 30px;
+}
+.contact__heading {
+    font-size: 35px;
+    font-family: 'Comfortaa', cursive;
+}
+.footer__data>p {
+    font-size: 24px;
+}
+.contact__link {
+    color: #4949a0;
+}
+/* /footer=============== */
+/* media ================ */
+@media screen and (max-width: 500px) {
+    .logo {
+        font-size: 28px;
+    }
+    .works {
+        padding: 40px 0 10px;
+    }
+    .header {
+        background: #4a486d url('../img/header/header-bg-mobile.jpg') no-repeat center;
+        background-size: cover; 
+    }
+}
